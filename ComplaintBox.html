@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SAFAAI 2022</title>
+        <link rel="icon" type="image/x-icon" href="SafaaiIcon.png">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+       <!-- BOOTSTRAP JAVASCRIPT & JQUERY LINKS -->
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+       <!-- BOOTSTRAP CSS LINKS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+<style>
+  body{
+    background-color: #EEF1FF;
+  }
+        .navbar-nav {
+        margin-left: auto;
+    }
+    .navbar{
+        background-color: #B1B2FF;
+    }
+.navbar-nav button{
+  background-color: #B1B2FF;
+}
+
+.contain {
+  background-color: #eee;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+div.form {
+  background-color: #eee;
+}
+.contact-wrapper {
+  margin: auto 0;
+}
+
+.submit-btn {
+  float: left;
+}
+.reset-btn {
+  float: right;
+}
+
+.form-headline:after {
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 10px;
+  border-bottom: 3px solid #B1B2FF;
+}
+
+.highlight-text {
+  color: #B1B2FF;
+}
+
+.hightlight-contact-info {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-text-grey {
+  font-weight: 500;
+}
+
+.email-info {
+    margin-top: 20px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  font-family: 'Roboto', sans-serif;
+}
+
+.required-input {
+  color: black;
+}
+@media (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.form-input:focus,
+textarea:focus{
+  outline: 1.5px solid #B1B2FF;
+}
+
+.form-input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .wrapper > * {
+    padding: 2em 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+  color: #212d31;
+}
+
+.form {
+  background: #fff;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+form label {
+  display: block;
+}
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+.submit-btn,
+.form-input,
+textarea {
+  padding: 1em;
+}
+
+button, .submit-btn {
+  background: transparent;
+  border: 1px solid #B1B2FF;
+  color: #B1B2FF;
+  border-radius: 15px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+button:hover, .submit-btn:hover,
+button:focus , .submit-btn:focus{
+  background: #B1B2FF;
+  outline: 0;
+  color: #eee;
+}
+.error {
+  color: #B1B2FF;
+}
+
+
+
+
+</style>       
+    <body>
+        <!-- navigation bar starts from here -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">SAFAAI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#B1B2FF">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="ComplaintBox.html">Complaint Box</a>
+                <a class="nav-item nav-link" href="AboutUs.html">About Us</a>
+                <!-- <a class="nav-item nav-link disabled" href="#">@YOGX TECHNOLOGIES 2022</a> -->
+              </div>
+            </div>
+          </nav>
+          <!-- complaint form starts from here -->
+          <div class="contain">
+
+            <div class="wrapper">
+          
+              <div class="form">
+                <h4>GET IN TOUCH</h4>
+                <h2 class="form-headline">Send us a message</h2>
+                <form id="submit-form" action="ComplaintBox.php" method="POST" target="_blank">
+                  <p>
+                    <input name="name" id="name" class="form-input" type="text" placeholder="Your Name*">
+                    <small class="name-error"></small>
+                  </p>
+                  <p>
+                    <input name="email" id="email" class="form-input" type="email" placeholder="Your Email*">
+                    <small class="name-error"></small>
+                  </p>
+                  <p class="full-width">
+                    <input name="address" id="company-name" class="form-input" type="text" placeholder="Your Address*" required>
+                    <small></small>
+                  </p>
+                  <p class="full-width">
+                    <textarea name="message"  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                    <small></small>
+                  </p>
+                  <p class="full-width">
+                    <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about your services.
+                  </p>
+                  <p class="full-width">
+                    <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                    <button class="reset-btn" onclick="reset()">Reset</button>
+                  </p>
+                </form>
+              </div>
+          
+              <div class="contacts contact-wrapper">
+          
+                <ul>
+                  <li>Welcome to <span class="highlight-text-grey">SAFAAI</span>.
+                    Ready to know
+                    how we can help you?</li>
+                  <span class="hightlight-contact-info">
+                    <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> safaai@gmail.com</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91********7</span></li>
+                  </span>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+           <!-- footer starts from here -->
+    <footer class="text-center text-white" style="background-color:#D2DAFF;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa fa-twitter"></i
+            ></a>
+      
+            <!-- YouTube -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa fa-youtube"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+       
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: #B1B2FF">
+          © 2022 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">@YOGX TECHNOLOGIES</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </body>
+</html>
